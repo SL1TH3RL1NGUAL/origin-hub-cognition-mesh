@@ -1,0 +1,8 @@
+{
+  "insight_id": "uuid",
+  "obs_id": "uuid",
+  "lab_pod_id": "lab_pod_a",
+  "summary": "Short human-readable description",
+  "metadata": {},
+  "created_at": "ISO-8601"
+}
