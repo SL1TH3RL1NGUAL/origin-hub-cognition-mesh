@@ -1,5 +1,3 @@
-# origin-hub-cognition-mesh
-
 # Origin Hub Cognition Mesh
 
 A distributed cognition fabric that transforms every RF/API/telemetry/human signal into a compounding insight asset.
