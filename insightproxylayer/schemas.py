@@ -3,24 +3,14 @@ from typing import Any, List, Dict
 import uuid
 from datetime import datetime
 
-
 class Observation(BaseModel):
-    """
-    Canonical unit of reality entering the cognition mesh.
-    Every RF/API/telemetry/human signal is normalized into this form.
-    """
     obs_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     source_origin: str
-    payload_type: str  # RF | JSON | TELEMETRY | HUMAN_PROMPT
+    payload_type: str
     raw_data: Any
     context_stack: List[str] = []
 
-
 class Insight(BaseModel):
-    """
-    Output of a lab_pod agent_unit.
-    These accumulate into the global behavior tree and deepen the mesh over time.
-    """
     insight_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     obs_id: str
     lab_pod_id: str
