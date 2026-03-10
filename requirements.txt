@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+pydantic
+nats-py
+redis
+redis-om
+orjson
